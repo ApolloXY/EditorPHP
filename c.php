@@ -24,7 +24,7 @@ if (isset($_SERVER['PHP_AUTH_USER']) && isset($_SERVER['PHP_AUTH_PW'])){
     $Username = $_SERVER['PHP_AUTH_USER'];
     $Password = $_SERVER['PHP_AUTH_PW'];
     
-    if ($Username == 'apollo' && $Password == 'atharvak') {
+    if ($Username == 'admin' && $Password == 'admin') {
         $_SESSION['logged'] = true;
 
     }else{
