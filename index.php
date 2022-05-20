@@ -101,14 +101,8 @@ require './c.php';
         }else{
             $code = "<?php require './c.php';?> \n".$_POST['code'];
         }
-
-        $myFile = "./result.php";
-        $fh = fopen($myFile, 'w') or die("can't open file");
-        if(!$fh){
-            echo 'file is not opend';
-        }
-        fwrite($fh, $code);
-        fclose($fh);
+        file_put_contents("result.php",$code);
+      
    }
 ?>
 
