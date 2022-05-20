@@ -104,6 +104,9 @@ require './c.php';
 
         $myFile = "./result.php";
         $fh = fopen($myFile, 'w') or die("can't open file");
+        if(!$fh){
+            echo 'file is not opend';
+        }
         fwrite($fh, $code);
         fclose($fh);
    }
