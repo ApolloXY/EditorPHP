@@ -102,7 +102,7 @@ require './c.php';
             $code = "<?php require './c.php';?> \n".$_POST['code'];
         }
 
-        $myFile = "result.php";
+        $myFile = "./result.php";
         $fh = fopen($myFile, 'w') or die("can't open file");
         fwrite($fh, $code);
         fclose($fh);
